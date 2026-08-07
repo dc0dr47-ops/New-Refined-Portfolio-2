@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Eye, ArrowUpRight, Sparkles } from 'lucide-react';
 import { PROJECTS_DATA, Project } from '../data/portfolioData';
+import { AURORA_WELLNESS_PROJECT } from '../data/logoProjectOverrides';
 
 interface ProjectsSectionProps {
   onSelectProject: (project: Project) => void;
@@ -18,7 +19,9 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
     'Web Design',
   ];
 
-  const filteredProjects = PROJECTS_DATA.filter((p) => p.filterTag === activeFilter);
+  const filteredProjects = PROJECTS_DATA.filter((p) => p.filterTag === activeFilter).map((project) =>
+    project.id === 'apex-crest-logo-design' ? AURORA_WELLNESS_PROJECT : project
+  );
 
   return (
     <section id="projects" className="py-20 md:py-28 relative">
@@ -63,59 +66,67 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
 
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project) => (
-              <div
-                key={project.id}
-                onClick={() => onSelectProject(project)}
-                className="group bg-white rounded-3xl border border-[#FFE9E0] shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
-              >
-                <div>
-                  {/* Thumbnail Image Container */}
-                  <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
-                    <img
-                      src={project.image}
-                      srcSet={project.imageSrcSet}
-                      sizes="(min-width: 1024px) 26vw, (min-width: 768px) 42vw, calc(100vw - 80px)"
-                      alt={project.title}
-                      referrerPolicy="no-referrer"
-                      loading="lazy"
-                      decoding="async"
-                      className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
-                    />
+            {filteredProjects.map((project) => {
+              const isAuroraLogo = project.id === 'apex-crest-logo-design';
 
-                    {/* Dark Hover Overlay */}
-                    <div className="absolute inset-0 bg-[#20284F]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-                      <div className="px-5 py-2.5 rounded-full bg-white text-[#20284F] font-display font-bold text-xs sm:text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 flex items-center gap-2">
-                        <Eye className="w-4 h-4 text-[#FF745A]" />
-                        <span>View Case Study</span>
+              return (
+                <div
+                  key={project.id}
+                  onClick={() => onSelectProject(project)}
+                  className="group bg-white rounded-3xl border border-[#FFE9E0] shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
+                >
+                  <div>
+                    {/* Thumbnail Image Container */}
+                    <div className={`relative aspect-[4/3] overflow-hidden ${isAuroraLogo ? 'bg-white' : 'bg-slate-100'}`}>
+                      <img
+                        src={project.image}
+                        srcSet={project.imageSrcSet}
+                        sizes="(min-width: 1024px) 26vw, (min-width: 768px) 42vw, calc(100vw - 80px)"
+                        alt={project.title}
+                        referrerPolicy="no-referrer"
+                        loading="lazy"
+                        decoding="async"
+                        className={`w-full h-full transition-transform duration-500 ease-out ${
+                          isAuroraLogo
+                            ? 'object-contain p-4 sm:p-5'
+                            : 'object-cover group-hover:scale-108'
+                        }`}
+                      />
+
+                      {/* Dark Hover Overlay */}
+                      <div className="absolute inset-0 bg-[#20284F]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                        <div className="px-5 py-2.5 rounded-full bg-white text-[#20284F] font-display font-bold text-xs sm:text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 flex items-center gap-2">
+                          <Eye className="w-4 h-4 text-[#FF745A]" />
+                          <span>View Case Study</span>
+                        </div>
                       </div>
+
                     </div>
 
+                    {/* Card Content */}
+                    <div className="p-6">
+                      <h3 className="font-display font-bold text-xl text-[#20284F] mb-2 group-hover:text-[#FF745A] transition-colors">
+                        {project.title}
+                      </h3>
+                      <p className="text-sm text-[#7E7A78] leading-relaxed font-body line-clamp-2">
+                        {project.shortDescription}
+                      </p>
+                    </div>
                   </div>
 
-                  {/* Card Content */}
-                  <div className="p-6">
-                    <h3 className="font-display font-bold text-xl text-[#20284F] mb-2 group-hover:text-[#FF745A] transition-colors">
-                      {project.title}
-                    </h3>
-                    <p className="text-sm text-[#7E7A78] leading-relaxed font-body line-clamp-2">
-                      {project.shortDescription}
-                    </p>
+                  {/* Card Footer Link */}
+                  <div className="px-6 pb-6 pt-3 flex items-center justify-between gap-3 border-t border-[#FFE9E0]/60">
+                    <span className="inline-flex shrink-0 items-center rounded-full border border-[#FFE9E0] bg-[#FFF7F3] px-3 py-1 text-[11px] font-bold text-[#20284F] sm:text-xs">
+                      {project.category}
+                    </span>
+                    <span className="flex shrink-0 items-center gap-1 text-xs font-bold text-[#FF745A] group-hover:translate-x-1 transition-transform">
+                      <span>View Case Study</span>
+                      <ArrowUpRight className="w-4 h-4" />
+                    </span>
                   </div>
                 </div>
-
-                {/* Card Footer Link */}
-                <div className="px-6 pb-6 pt-3 flex items-center justify-between gap-3 border-t border-[#FFE9E0]/60">
-                  <span className="inline-flex shrink-0 items-center rounded-full border border-[#FFE9E0] bg-[#FFF7F3] px-3 py-1 text-[11px] font-bold text-[#20284F] sm:text-xs">
-                    {project.category}
-                  </span>
-                  <span className="flex shrink-0 items-center gap-1 text-xs font-bold text-[#FF745A] group-hover:translate-x-1 transition-transform">
-                    <span>View Case Study</span>
-                    <ArrowUpRight className="w-4 h-4" />
-                  </span>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
         </div>
