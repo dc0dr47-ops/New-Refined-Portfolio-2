@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Lumina Boutique logo</title>
+  <desc id="desc">Elegant gold lotus inside a halo, paired with a refined boutique wordmark.</desc>
+  <rect width="1200" height="900" fill="#FFFDF8"/>
+  <g fill="none" stroke="#C99A3D" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="600" cy="350" r="158" stroke-width="14"/>
+    <path d="M600 472c-53-45-76-103-57-165 31 13 52 34 57 68 6-34 27-55 58-68 19 62-4 120-58 165Z" stroke-width="14"/>
+    <path d="M594 469c-82-15-126-61-132-132 58 4 102 28 132 72" stroke-width="14"/>
+    <path d="M606 469c82-15 126-61 132-132-58 4-102 28-132 72" stroke-width="14"/>
+    <path d="M600 472c-26-72-20-130 0-177 20 47 26 105 0 177Z" stroke-width="14"/>
+    <circle cx="600" cy="236" r="17" fill="#C99A3D" stroke="none"/>
+  </g>
+  <text x="600" y="704" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="700" letter-spacing="9" fill="#214B3A">LUMINA</text>
+  <text x="600" y="763" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" letter-spacing="14" fill="#C99A3D">BOUTIQUE</text>
+</svg>
