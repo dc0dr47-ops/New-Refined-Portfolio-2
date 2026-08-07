@@ -68,7 +68,7 @@ export interface Project {
   id: string;
   title: string;
   category: string;
-  filterTag: 'Illustration' | 'Photo Editing' | 'Social Media' | 'Branding' | 'Web Design';
+  filterTag: 'Illustration' | 'Photo Editing' | 'Social Media' | 'Logos' | 'Branding' | 'Web Design';
   shortDescription: string;
   thumbnailBg: string;
   image: string;
@@ -550,6 +550,108 @@ export const PROJECTS_DATA: Project[] = [
     approach: "Paired warm color grading with playful chalk-style handwritten callouts and bold price tags.",
     toolsUsed: ["Adobe Photoshop", "Canva"],
     outcome: "Boosted weekend dinner reservations by 38% through Instagram social marketing."
+  },
+
+  // ================= LOGOS (5 PROJECTS) =================
+  {
+    id: "apex-crest-logo-design",
+    title: "Apex Peak Emblem & Wordmark",
+    category: "Logo Designing",
+    filterTag: "Logos",
+    shortDescription: "Geometric mountain crest symbol and modern sans-serif wordmark for an outdoor adventure brand.",
+    thumbnailBg: "from-cyan-100 via-sky-100 to-blue-100",
+    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80"
+    ],
+    client: "Apex Outdoor Gear",
+    year: "2025",
+    role: "Logo & Monogram Designer",
+    overview: "Designed a minimalist geometric mountain emblem paired with custom typographic kerning for an outdoor sports and apparel brand.",
+    challenge: "Creating an icon that scales cleanly from a tiny 16px favicon to giant embroidered jacket badges.",
+    approach: "Utilized golden ratio vector grids in Adobe Illustrator with clean monochrome and duo-tone colorways.",
+    toolsUsed: ["Adobe Illustrator", "Figma"],
+    outcome: "Adopted as the official brand icon across 120+ retail product lines."
+  },
+  {
+    id: "lumin-tech-monogram-logo",
+    title: "Lumin AI Tech Monogram",
+    category: "Logo Designing",
+    filterTag: "Logos",
+    shortDescription: "Futuristic interlocking 'L' and spark monogram mark for an artificial intelligence analytics startup.",
+    thumbnailBg: "from-indigo-100 via-purple-100 to-violet-100",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80"
+    ],
+    client: "Lumin AI Systems",
+    year: "2025",
+    role: "Brand Identity & Logo Specialist",
+    overview: "Created a modern gradient monogram and wordmark conveying intelligence, precision, and forward velocity.",
+    challenge: "Balancing abstract futuristic geometry with immediate readability and trustworthy corporate appeal.",
+    approach: "Built precise mathematical bezier vectors with glowing gradient accents and clean dark/light mode variants.",
+    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop"],
+    outcome: "Secured $14M Series-A funding with a unified, high-tech brand mark."
+  },
+  {
+    id: "veritas-coffee-roasters-logo",
+    title: "Veritas Artisan Coffee Stamp Logo",
+    category: "Logo Designing",
+    filterTag: "Logos",
+    shortDescription: "Vintage circular badge mark with handcrafted serif lettering for a specialty coffee roastery.",
+    thumbnailBg: "from-amber-100 via-stone-100 to-orange-100",
+    image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80"
+    ],
+    client: "Veritas Coffee Roasters",
+    year: "2025",
+    role: "Vector Emblem & Logo Designer",
+    overview: "Designed a rustic, seal-style logo featuring hand-drawn coffee branch details and custom curved typography.",
+    challenge: "Maintaining vintage craftsmanship texture while ensuring crisp vector scalability for stamps, bags, and neon signs.",
+    approach: "Hand-penciled initial concepts, refined anchor points in Illustrator, and tested embossing, foil stamping, and embroidery.",
+    toolsUsed: ["Adobe Illustrator"],
+    outcome: "Featured on national coffee packaging design awards and 15 café storefronts."
+  },
+  {
+    id: "horizon-real-estate-wordmark",
+    title: "Horizon Properties Minimalist Wordmark",
+    category: "Logo Designing",
+    filterTag: "Logos",
+    shortDescription: "Architectural luxury wordmark and geometric 'H' icon for high-end real estate developments.",
+    thumbnailBg: "from-slate-100 via-zinc-100 to-emerald-100",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    client: "Horizon Real Estate Group",
+    year: "2024",
+    role: "Corporate Identity Designer",
+    overview: "Crafted a refined architectural logotype with custom ligature details reflecting structure, elevation, and trust.",
+    challenge: "Distinguishing the brand from generic house-icon real estate logos through sophisticated typographic minimalism.",
+    approach: "Designed custom letterforms with subtle 45-degree angle cuts mirroring modern architectural rooflines.",
+    toolsUsed: ["Adobe Illustrator", "Figma"],
+    outcome: "Unified 4 regional property branches under a prestige luxury identity."
+  },
+  {
+    id: "solaris-clean-energy-symbol",
+    title: "Solaris Renewable Energy Icon",
+    category: "Logo Designing",
+    filterTag: "Logos",
+    shortDescription: "Vibrant solar burst and leaf combination logo mark for a sustainable green tech company.",
+    thumbnailBg: "from-emerald-100 via-lime-100 to-yellow-100",
+    image: "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1200&q=80"
+    ],
+    client: "Solaris Clean Energy",
+    year: "2026",
+    role: "Brand Identity Designer",
+    overview: "Created a dynamic geometric symbol combining sun rays and leaf silhouettes to represent clean, sustainable energy.",
+    challenge: "Merging two distinct concepts (sun and leaf) into a single unified symbol without visual clutter.",
+    approach: "Used overlapping geometric curves and a vivid gradient palette transition from green to golden yellow.",
+    toolsUsed: ["Adobe Illustrator", "AI Tools"],
+    outcome: "Rolled out on corporate fleets, solar panel branding, and international eco summits."
   },
 
   // ================= BRANDING (5 PROJECTS) =================

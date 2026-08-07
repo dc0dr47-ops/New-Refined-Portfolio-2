@@ -13,6 +13,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
     'Illustration',
     'Photo Editing',
     'Social Media',
+    'Logos',
     'Branding',
     'Web Design',
   ];
