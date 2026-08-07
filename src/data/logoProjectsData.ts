@@ -1,17 +1,9 @@
 import { Project } from './portfolioData';
-import auroraBase64 from '../assets/logo-data-ts/aurora';
-import brixtonBase64 from '../assets/logo-data-ts/brixton';
-import nexoraBase64 from '../assets/logo-data-ts/nexora';
-import pixoraBase64 from '../assets/logo-data-ts/pixora';
-import luminaBase64 from '../assets/logo-data-ts/lumina';
-
-const asWebP = (base64: string) => `data:image/webp;base64,${base64}`;
-
-const auroraLogo = asWebP(auroraBase64);
-const brixtonLogo = asWebP(brixtonBase64);
-const nexoraLogo = asWebP(nexoraBase64);
-const pixoraLogo = asWebP(pixoraBase64);
-const luminaLogo = asWebP(luminaBase64);
+import auroraLogo from '../assets/images/logo-aurora-wellness.webp';
+import brixtonLogo from '../assets/images/logo-brixton-coffee.webp';
+import nexoraLogo from '../assets/images/logo-nexora-technologies.webp';
+import pixoraLogo from '../assets/images/logo-pixora-studios.webp';
+import luminaLogo from '../assets/images/logo-lumina-boutique.webp';
 
 export const LOGO_PROJECTS_DATA = [
   {
