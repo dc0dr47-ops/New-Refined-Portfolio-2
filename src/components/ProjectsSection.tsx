@@ -83,7 +83,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                       referrerPolicy="no-referrer"
                       loading="lazy"
                       decoding="async"
-                      className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                      className={`w-full h-full transition-transform duration-500 ease-out ${
+                        project.filterTag === 'Logos'
+                          ? 'object-contain bg-white group-hover:scale-[1.03]'
+                          : 'object-cover group-hover:scale-108'
+                      }`}
                     />
 
                     {/* Dark Hover Overlay */}
