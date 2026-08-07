@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import { Eye, ArrowUpRight, Sparkles } from 'lucide-react';
 import { PROJECTS_DATA, Project } from '../data/portfolioData';
-import { LOGO_PROJECTS_DATA } from '../data/logoProjectsData';
 
 interface ProjectsSectionProps {
   onSelectProject: (project: Project) => void;
 }
-
-const ALL_PROJECTS = [...PROJECTS_DATA, ...LOGO_PROJECTS_DATA];
 
 export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProject }) => {
   const [activeFilter, setActiveFilter] = useState<string>('Illustration');
@@ -16,12 +13,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
     'Illustration',
     'Photo Editing',
     'Social Media',
-    'Logos',
     'Branding',
     'Web Design',
   ];
 
-  const filteredProjects = ALL_PROJECTS.filter((p) => p.filterTag === activeFilter);
+  const filteredProjects = PROJECTS_DATA.filter((p) => p.filterTag === activeFilter);
 
   return (
     <section id="projects" className="py-20 md:py-28 relative">
@@ -40,7 +36,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
               Some of My Best Work
             </h2>
             <p className="mt-3 text-base text-[#7E7A78] font-body">
-              Explore case studies across vector illustration, photo retouching, social campaigns, logo design, branding, and web design.
+              Explore case studies across vector illustration, photo retouching, social campaigns, branding, and web design.
             </p>
           </div>
 
@@ -83,11 +79,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                       referrerPolicy="no-referrer"
                       loading="lazy"
                       decoding="async"
-                      className={`w-full h-full transition-transform duration-500 ease-out ${
-                        project.filterTag === 'Logos'
-                          ? 'object-contain bg-white group-hover:scale-[1.03]'
-                          : 'object-cover group-hover:scale-108'
-                      }`}
+                      className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
                     />
 
                     {/* Dark Hover Overlay */}

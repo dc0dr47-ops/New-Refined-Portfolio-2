@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowDownRight, Sparkles, MessageSquare, ChevronDown } from 'lucide-react';
 import { DESIGNER_INFO } from '../data/portfolioData';
 import { CharacterIllustration } from './CharacterIllustration';
@@ -6,27 +6,13 @@ import { FloatingIcon } from './FloatingIcon';
 
 export const HeroSection: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
-  const rafId = useRef<number | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (rafId.current !== null) return;
-
-      rafId.current = window.requestAnimationFrame(() => {
-        // Indicator is fully hidden after 100px, so stop triggering rerenders past that point.
-        setScrollY(Math.min(window.scrollY, 100));
-        rafId.current = null;
-      });
+      setScrollY(window.scrollY);
     };
-
     window.addEventListener('scroll', handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      if (rafId.current !== null) {
-        window.cancelAnimationFrame(rafId.current);
-      }
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSection = (id: string) => {
