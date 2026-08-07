@@ -54,7 +54,7 @@ export const HeroSection: React.FC = () => {
             <h1 className="hero-title font-display font-extrabold text-[#20284F] tracking-tight">
               Hi, I’m{' '}
               <span className="relative inline-block text-[#FF745A]">
-                {DESIGNER_INFO.name}
+                Aftaaab Nadeeeem
                 <svg
                   className="absolute left-0 -bottom-1 w-full h-2.5 sm:h-3 text-[#FF947E]/40"
                   viewBox="0 0 200 12"
