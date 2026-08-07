@@ -1,122 +1,109 @@
 import { Project } from './portfolioData';
-
-const logoPreview = (mark: string, wordmark: string, accent: string, background = '#FFF9F6') =>
-  `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
-      <rect width="1200" height="900" rx="48" fill="${background}"/>
-      <circle cx="600" cy="350" r="170" fill="${accent}" opacity="0.12"/>
-      <rect x="430" y="180" width="340" height="340" rx="86" fill="white" stroke="${accent}" stroke-width="18"/>
-      <text x="600" y="398" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="170" font-weight="800" fill="${accent}">${mark}</text>
-      <text x="600" y="650" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" fill="#20284F">${wordmark}</text>
-      <text x="600" y="712" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" letter-spacing="8" fill="#7E7A78">LOGO CONCEPT</text>
-    </svg>
-  `)}`;
-
-const northstarLogo = logoPreview('N', 'NORTHSTAR', '#FF745A');
-const vertexLogo = logoPreview('V', 'VERTEX LABS', '#5B6CFF', '#F5F7FF');
-const emberLogo = logoPreview('E', 'EMBER & CO.', '#F59E0B', '#FFF8E8');
-const harborLogo = logoPreview('H', 'HARBOR COFFEE', '#0F766E', '#F0FDFA');
-const monogramLogo = logoPreview('AM', 'ATLAS MONOGRAM', '#7C3AED', '#FAF5FF');
+import auroraLogo from '../assets/images/logo-aurora-wellness.svg';
+import brixtonLogo from '../assets/images/logo-brixton-coffee.svg';
+import nexoraLogo from '../assets/images/logo-nexora-technologies.svg';
+import pixoraLogo from '../assets/images/logo-pixora-studios.svg';
+import luminaLogo from '../assets/images/logo-lumina-boutique.svg';
 
 export const LOGO_PROJECTS_DATA = [
   {
-    id: 'northstar-logo-system',
-    title: 'Northstar Identity Mark',
+    id: 'aurora-wellness-logo',
+    title: 'Aurora Wellness Identity',
     category: 'Logos',
     filterTag: 'Logos',
-    shortDescription: 'A clean directional monogram built for a modern consulting and strategy brand.',
-    thumbnailBg: 'from-orange-50 via-white to-rose-50',
-    image: northstarLogo,
-    detailImage: northstarLogo,
+    shortDescription: 'A fluid teal A-and-wave symbol expressing balance, renewal, movement, and everyday wellbeing.',
+    thumbnailBg: 'from-teal-50 via-white to-cyan-50',
+    image: auroraLogo,
+    detailImage: auroraLogo,
     detailAspect: '4/3',
     gallery: [],
-    client: 'Northstar Consulting — Sample Concept',
+    client: 'Aurora Wellness — Fictional Concept',
     year: '2026',
     role: 'Logo & Identity Designer',
-    overview: 'Developed a compact monogram and wordmark concept focused on clarity, direction and confident positioning.',
-    challenge: 'Creating a recognizable symbol that remains readable at small sizes while still feeling distinctive in larger brand applications.',
-    approach: 'Reduced the idea to a bold initial-based mark, paired it with a straightforward wordmark, and tested the system for digital and print use.',
+    overview: 'Created a calm wellness identity around a custom letter A that merges with a flowing wave, giving the brand a recognizable symbol for balance, renewal, and forward movement.',
+    challenge: 'Building a wellness mark that feels peaceful without relying on generic spa leaves, while remaining strong enough for app icons, packaging, signage, and social profiles.',
+    approach: 'Combined a simple triangular A structure with layered wave forms, then paired teal and deep blue tones with a spacious uppercase wordmark.',
     toolsUsed: ['Adobe Illustrator', 'Figma'],
-    outcome: 'Produced a flexible sample identity suitable for stationery, social profiles, presentations and web headers.'
+    outcome: 'Produced a clean, scalable identity system suited to wellness products, digital services, studio signage, and branded merchandise.'
   },
   {
-    id: 'vertex-labs-logo',
-    title: 'Vertex Labs Tech Logo',
+    id: 'brixton-coffee-logo',
+    title: 'Brixton Coffee Co. Monogram',
     category: 'Logos',
     filterTag: 'Logos',
-    shortDescription: 'A sharp geometric identity concept for a technology and product-development studio.',
-    thumbnailBg: 'from-indigo-50 via-white to-blue-50',
-    image: vertexLogo,
-    detailImage: vertexLogo,
+    shortDescription: 'A confident editorial B monogram crossed by a warm coffee leaf for a crafted neighborhood roastery.',
+    thumbnailBg: 'from-amber-50 via-white to-stone-50',
+    image: brixtonLogo,
+    detailImage: brixtonLogo,
     detailAspect: '4/3',
     gallery: [],
-    client: 'Vertex Labs — Sample Concept',
-    year: '2026',
-    role: 'Logo Designer',
-    overview: 'Created a technology-focused identity concept using a compact geometric letterform and strong visual hierarchy.',
-    challenge: 'Balancing a technical personality with enough simplicity to keep the mark usable across app icons, websites and documents.',
-    approach: 'Built the symbol from minimal geometry and paired it with a clear uppercase wordmark for a modern, scalable system.',
-    toolsUsed: ['Adobe Illustrator', 'Figma'],
-    outcome: 'Delivered a crisp sample logo direction that works across small digital placements and larger brand surfaces.'
-  },
-  {
-    id: 'ember-co-logo',
-    title: 'Ember & Co. Brand Mark',
-    category: 'Logos',
-    filterTag: 'Logos',
-    shortDescription: 'A warm premium identity concept designed for a boutique lifestyle and home-goods brand.',
-    thumbnailBg: 'from-amber-50 via-white to-orange-50',
-    image: emberLogo,
-    detailImage: emberLogo,
-    detailAspect: '4/3',
-    gallery: [],
-    client: 'Ember & Co. — Sample Concept',
-    year: '2026',
-    role: 'Brand Identity Designer',
-    overview: 'Designed a warm, approachable logo concept that can move comfortably between packaging, social media and retail applications.',
-    challenge: 'Keeping the identity premium without making it feel overly formal or difficult to reproduce.',
-    approach: 'Used a simple initial mark, restrained color palette and balanced typography to create an adaptable identity foundation.',
-    toolsUsed: ['Adobe Illustrator', 'Adobe Photoshop'],
-    outcome: 'Created a versatile sample mark ready for packaging mockups, labels, online storefronts and promotional assets.'
-  },
-  {
-    id: 'harbor-coffee-logo',
-    title: 'Harbor Coffee Logo',
-    category: 'Logos',
-    filterTag: 'Logos',
-    shortDescription: 'A calm, dependable logo direction for a neighborhood coffee shop and packaged coffee line.',
-    thumbnailBg: 'from-teal-50 via-white to-emerald-50',
-    image: harborLogo,
-    detailImage: harborLogo,
-    detailAspect: '4/3',
-    gallery: [],
-    client: 'Harbor Coffee — Sample Concept',
+    client: 'Brixton Coffee Co. — Fictional Concept',
     year: '2026',
     role: 'Logo & Packaging Designer',
-    overview: 'Explored a friendly identity system that feels equally at home on storefront signage, cups, bags and digital menus.',
-    challenge: 'Creating a mark with enough character for hospitality while keeping the shape simple for stamps and small packaging labels.',
-    approach: 'Focused on a bold initial, strong contrast and uncomplicated typography to keep reproduction reliable at every size.',
+    overview: 'Designed a distinctive coffee identity using a strong serif B monogram intersected by a warm leaf motif, balancing classic café character with modern retail polish.',
+    challenge: 'Making the mark feel premium and handcrafted while keeping it simple enough for cup stamps, bag labels, storefront signs, and small digital avatars.',
+    approach: 'Used an editorial letterform as the visual anchor, added a minimal leaf with vein details, and limited the palette to dark navy and roasted orange.',
     toolsUsed: ['Adobe Illustrator', 'Adobe Photoshop'],
-    outcome: 'Produced a clear sample identity that can extend naturally into packaging, signage and social content.'
+    outcome: 'Delivered a versatile logo direction ready for coffee bags, takeaway cups, menus, loyalty cards, signage, and social content.'
   },
   {
-    id: 'atlas-monogram-logo',
-    title: 'Atlas Monogram System',
+    id: 'nexora-technologies-logo',
+    title: 'Nexora Technologies Logo',
     category: 'Logos',
     filterTag: 'Logos',
-    shortDescription: 'A compact two-letter monogram concept for a premium architecture and interiors studio.',
-    thumbnailBg: 'from-purple-50 via-white to-fuchsia-50',
-    image: monogramLogo,
-    detailImage: monogramLogo,
+    shortDescription: 'A geometric green N with integrated leaf geometry, connecting technology, growth, and sustainable innovation.',
+    thumbnailBg: 'from-green-50 via-white to-emerald-50',
+    image: nexoraLogo,
+    detailImage: nexoraLogo,
     detailAspect: '4/3',
     gallery: [],
-    client: 'Atlas Studio — Sample Concept',
+    client: 'Nexora Technologies — Fictional Concept',
     year: '2026',
-    role: 'Monogram & Identity Designer',
-    overview: 'Created a restrained two-letter monogram system intended for an architecture and interiors practice with a premium visual tone.',
-    challenge: 'Combining two initials without sacrificing legibility, balance or scalability across drawings, stationery and signage.',
-    approach: 'Used simplified letter construction, generous spacing and a controlled palette to make the monogram feel precise and architectural.',
+    role: 'Technology Logo Designer',
+    overview: 'Developed a forward-looking technology identity around an angular N built from modular panels, with a leaf element adding a clear sustainability and growth narrative.',
+    challenge: 'Combining technology and environmental values without making the logo feel like a generic eco badge or an overly complex circuit symbol.',
+    approach: 'Constructed the N from crisp geometric planes, varied green tones for depth, and a restrained leaf accent that remains readable at small sizes.',
     toolsUsed: ['Adobe Illustrator', 'Figma'],
-    outcome: 'Delivered a polished sample monogram direction suited to stationery, project documents, signage and digital brand use.'
+    outcome: 'Created a scalable technology mark suitable for software interfaces, pitch decks, hardware packaging, corporate documents, and digital campaigns.'
+  },
+  {
+    id: 'pixora-studios-logo',
+    title: 'Pixora Studios Creative Mark',
+    category: 'Logos',
+    filterTag: 'Logos',
+    shortDescription: 'A bold coral P inside a circular badge with a spark accent, built for a lively creative production studio.',
+    thumbnailBg: 'from-orange-50 via-white to-rose-50',
+    image: pixoraLogo,
+    detailImage: pixoraLogo,
+    detailAspect: '4/3',
+    gallery: [],
+    client: 'Pixora Studios — Fictional Concept',
+    year: '2026',
+    role: 'Creative Brand Designer',
+    overview: 'Created an energetic studio logo centered on a bold P-shaped symbol inside a coral circle, finished with a small spark to suggest ideas, production, and creative momentum.',
+    challenge: 'Giving the studio a playful personality without sacrificing the clean geometry needed for professional production credits, thumbnails, and digital interfaces.',
+    approach: 'Used a compact circular construction, strong negative space, a coral-and-navy palette, and a simple star accent for immediate recognition.',
+    toolsUsed: ['Adobe Illustrator', 'Figma'],
+    outcome: 'Produced a memorable creative mark designed to work across video end cards, social avatars, portfolio covers, merchandise, and studio signage.'
+  },
+  {
+    id: 'lumina-boutique-logo',
+    title: 'Lumina Boutique Emblem',
+    category: 'Logos',
+    filterTag: 'Logos',
+    shortDescription: 'An elegant gold lotus framed by a circular halo, designed for a refined fashion and lifestyle boutique.',
+    thumbnailBg: 'from-amber-50 via-white to-emerald-50',
+    image: luminaLogo,
+    detailImage: luminaLogo,
+    detailAspect: '4/3',
+    gallery: [],
+    client: 'Lumina Boutique — Fictional Concept',
+    year: '2026',
+    role: 'Luxury Logo & Identity Designer',
+    overview: 'Designed a refined boutique emblem using a symmetrical lotus enclosed by a thin halo, creating a visual language of elegance, confidence, and curated luxury.',
+    challenge: 'Creating a feminine premium mark that feels sophisticated rather than decorative, while preserving clarity for tags, jewelry cards, packaging, and signage.',
+    approach: 'Built the emblem from balanced monoline petals, paired muted gold with deep green, and used a restrained serif wordmark for a timeless finish.',
+    toolsUsed: ['Adobe Illustrator', 'Adobe Photoshop'],
+    outcome: 'Delivered a polished identity direction suited to shopping bags, garment tags, packaging, storefront applications, stationery, and online retail.'
   }
 ] as unknown as Project[];
