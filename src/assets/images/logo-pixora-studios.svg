@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Pixora Studios logo</title>
+  <desc id="desc">Coral circular P symbol with a small creative spark, paired with a bold studio wordmark.</desc>
+  <rect width="1200" height="900" fill="#FFF9F6"/>
+  <g transform="translate(0 2)">
+    <circle cx="600" cy="355" r="154" fill="#FF6848"/>
+    <path d="M536 250h100c82 0 128 39 128 106 0 67-46 108-128 108h-31v82h-69V250Zm69 60v95h30c38 0 59-16 59-48 0-31-21-47-59-47h-30Z" fill="#FFF9F6"/>
+    <path d="M770 171l15 37 38 15-38 15-15 37-15-37-38-15 38-15 15-37Z" fill="#FF6848"/>
+  </g>
+  <text x="600" y="705" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="800" letter-spacing="10" fill="#183651">PIXORA</text>
+  <text x="600" y="765" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="15" fill="#FF6848">STUDIOS</text>
+</svg>
