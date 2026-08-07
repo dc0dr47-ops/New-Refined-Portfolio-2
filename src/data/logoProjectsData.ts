@@ -1,9 +1,9 @@
 import { Project } from './portfolioData';
-import auroraLogo from '../assets/images/logo-aurora-wellness.svg';
-import brixtonLogo from '../assets/images/logo-brixton-coffee.svg';
-import nexoraLogo from '../assets/images/logo-nexora-technologies.svg';
-import pixoraLogo from '../assets/images/logo-pixora-studios.svg';
-import luminaLogo from '../assets/images/logo-lumina-boutique.svg';
+import auroraLogo from '../assets/images/logo-aurora-wellness.webp';
+import brixtonLogo from '../assets/images/logo-brixton-coffee.webp';
+import nexoraLogo from '../assets/images/logo-nexora-technologies.webp';
+import pixoraLogo from '../assets/images/logo-pixora-studios.webp';
+import luminaLogo from '../assets/images/logo-lumina-boutique.webp';
 
 export const LOGO_PROJECTS_DATA = [
   {
