@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Brixton Coffee Co. logo</title>
+  <desc id="desc">Editorial B monogram crossed by a warm coffee leaf, paired with a classic coffee wordmark.</desc>
+  <rect width="1200" height="900" fill="#FFFDF9"/>
+  <g>
+    <text x="600" y="500" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="360" font-weight="700" fill="#183247">B</text>
+    <path d="M472 486c37-102 109-164 213-176-14 101-73 168-174 199-21 7-34 0-39-23Z" fill="#F29A2E"/>
+    <path d="M493 488c51-59 103-99 169-145" fill="none" stroke="#FFFDF9" stroke-width="13" stroke-linecap="round"/>
+    <path d="M544 430c-13-28-14-53-4-76M586 397c-6-21-4-42 5-62M619 374c10 18 14 37 12 56" fill="none" stroke="#FFFDF9" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="600" y="696" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="80" font-weight="700" letter-spacing="8" fill="#183247">BRIXTON</text>
+  <text x="600" y="757" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="13" fill="#F29A2E">COFFEE CO.</text>
+</svg>
