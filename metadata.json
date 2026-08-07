@@ -1,0 +1,6 @@
+{
+  "name": "Creative Designer Portfolio",
+  "description": "A warm, illustrated personal portfolio for a multidisciplinary graphic designer featuring vector illustration, photo editing, social media design, logo design, and web design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
