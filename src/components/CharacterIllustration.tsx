@@ -16,10 +16,13 @@ export const CharacterIllustration: React.FC<CharacterProps> = ({ pose, classNam
         {/* Soft Radial Ambient Backdrop Glow */}
         <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#FF745A]/25 via-[#FFE9E0]/40 to-transparent blur-3xl transform scale-110 pointer-events-none" />
 
-        {/* Hero Designer Portrait Image */}
+        {/* Hero Designer Portrait Image: prioritized because it is above the fold. */}
         <img
           src={imageSrc || heroPortrait}
           alt="Aftab Nadeem - Graphic Designer & Creative Technologist"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
           className="w-full h-full max-h-full object-contain relative z-10 select-none drop-shadow-xl"
         />
       </div>
@@ -36,6 +39,8 @@ export const CharacterIllustration: React.FC<CharacterProps> = ({ pose, classNam
         <img
           src={imageSrc || aboutPortrait}
           alt="Aftab Nadeem - About Portrait"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full max-h-full object-contain relative z-10 select-none drop-shadow-lg"
         />
       </div>
@@ -51,6 +56,8 @@ export const CharacterIllustration: React.FC<CharacterProps> = ({ pose, classNam
       <img
         src={imageSrc || contactPortrait}
         alt="Aftab Nadeem - Contact Portrait"
+        loading="lazy"
+        decoding="async"
         className="w-full h-full max-h-full object-contain relative z-10 select-none drop-shadow-lg"
       />
     </div>
