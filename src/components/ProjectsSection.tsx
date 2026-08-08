@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Eye, ArrowUpRight, Sparkles } from 'lucide-react';
 import { PROJECTS_DATA, Project } from '../data/portfolioData';
-import { AURORA_WELLNESS_PROJECT } from '../data/logoProjectOverrides';
+import { LOGO_PROJECTS_OVERRIDE } from '../data/logoProjectOverrides';
 
 interface ProjectsSectionProps {
   onSelectProject: (project: Project) => void;
@@ -19,18 +19,15 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
     'Web Design',
   ];
 
-  const filteredProjects = PROJECTS_DATA.filter((p) => p.filterTag === activeFilter).map((project) =>
-    project.id === 'apex-crest-logo-design' ? AURORA_WELLNESS_PROJECT : project
-  );
+  const filteredProjects =
+    activeFilter === 'Logos'
+      ? LOGO_PROJECTS_OVERRIDE
+      : PROJECTS_DATA.filter((p) => p.filterTag === activeFilter);
 
   return (
     <section id="projects" className="py-20 md:py-28 relative">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
-        
-        {/* Large Rounded Peach Background Box */}
         <div className="bg-peach-gradient rounded-3xl sm:rounded-[40px] p-8 sm:p-12 lg:p-16 border border-[#FFE9E0] shadow-sm">
-          
-          {/* Section Header */}
           <div className="text-center max-w-2xl mx-auto mb-10">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white text-[#FF745A] text-xs font-bold uppercase tracking-wider mb-3 shadow-2xs">
               <Sparkles className="w-3.5 h-3.5" />
@@ -40,11 +37,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
               Some of My Best Work
             </h2>
             <p className="mt-3 text-base text-[#7E7A78] font-body">
-              Explore case studies across vector illustration, photo retouching, social campaigns, branding, and web design.
+              Explore case studies across vector illustration, photo retouching, social campaigns, branding, logo design, and web design.
             </p>
           </div>
 
-          {/* Filter Tabs */}
           <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-3 mb-12">
             {filterTabs.map((tab) => {
               const isActive = activeFilter === tab;
@@ -64,10 +60,9 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
             })}
           </div>
 
-          {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project) => {
-              const isAuroraLogo = project.id === 'apex-crest-logo-design';
+              const isLogoProject = project.filterTag === 'Logos';
 
               return (
                 <div
@@ -76,8 +71,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                   className="group bg-white rounded-3xl border border-[#FFE9E0] shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
                 >
                   <div>
-                    {/* Thumbnail Image Container */}
-                    <div className={`relative aspect-[4/3] overflow-hidden ${isAuroraLogo ? 'bg-white' : 'bg-slate-100'}`}>
+                    <div className={`relative aspect-[4/3] overflow-hidden ${isLogoProject ? 'bg-white' : 'bg-slate-100'}`}>
                       <img
                         src={project.image}
                         srcSet={project.imageSrcSet}
@@ -87,23 +81,20 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                         loading="lazy"
                         decoding="async"
                         className={`w-full h-full transition-transform duration-500 ease-out ${
-                          isAuroraLogo
+                          isLogoProject
                             ? 'object-contain p-4 sm:p-5'
                             : 'object-cover group-hover:scale-108'
                         }`}
                       />
 
-                      {/* Dark Hover Overlay */}
                       <div className="absolute inset-0 bg-[#20284F]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
                         <div className="px-5 py-2.5 rounded-full bg-white text-[#20284F] font-display font-bold text-xs sm:text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 flex items-center gap-2">
                           <Eye className="w-4 h-4 text-[#FF745A]" />
                           <span>View Case Study</span>
                         </div>
                       </div>
-
                     </div>
 
-                    {/* Card Content */}
                     <div className="p-6">
                       <h3 className="font-display font-bold text-xl text-[#20284F] mb-2 group-hover:text-[#FF745A] transition-colors">
                         {project.title}
@@ -114,7 +105,6 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                     </div>
                   </div>
 
-                  {/* Card Footer Link */}
                   <div className="px-6 pb-6 pt-3 flex items-center justify-between gap-3 border-t border-[#FFE9E0]/60">
                     <span className="inline-flex shrink-0 items-center rounded-full border border-[#FFE9E0] bg-[#FFF7F3] px-3 py-1 text-[11px] font-bold text-[#20284F] sm:text-xs">
                       {project.category}
@@ -128,9 +118,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
               );
             })}
           </div>
-
         </div>
-
       </div>
     </section>
   );
