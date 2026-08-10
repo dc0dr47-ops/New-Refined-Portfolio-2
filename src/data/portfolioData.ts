@@ -43,16 +43,16 @@ import photoArchitecture1200 from '../assets/images/photo-architecture-1200.webp
 import photoProductRetouch480 from '../assets/images/photo-product-retouch-480.webp';
 import photoProductRetouch768 from '../assets/images/photo-product-retouch-768.webp';
 import photoProductRetouch1200 from '../assets/images/photo-product-retouch-1200.webp';
-import socialFoodpandaThumb from '../assets/images/social-foodpanda-thumb.png';
-import socialFoodpandaExpanded from '../assets/images/social-foodpanda-expanded.webp';
-import socialJazzThumb from '../assets/images/social-jazz-thumb.png';
-import socialJazzExpanded from '../assets/images/social-jazz-expanded.webp';
-import socialDarazThumb from '../assets/images/social-daraz-thumb.png';
-import socialDarazExpanded from '../assets/images/social-daraz-expanded.webp';
-import socialKhaadiThumb from '../assets/images/social-khaadi-thumb.png';
-import socialKhaadiExpanded from '../assets/images/social-khaadi-expanded.webp';
-import socialShanFoodsThumb from '../assets/images/social-shan-foods-thumb.png';
-import socialShanFoodsExpanded from '../assets/images/social-shan-foods-expanded.webp';
+import socialFoodpandaThumb from '../assets/images/social-foodpanda-card.webp';
+import socialFoodpandaExpanded from '../assets/images/social-foodpanda-case.webp';
+import socialJazzThumb from '../assets/images/social-jazz-card.webp';
+import socialJazzExpanded from '../assets/images/social-jazz-case.webp';
+import socialDarazThumb from '../assets/images/social-daraz-card.webp';
+import socialDarazExpanded from '../assets/images/social-daraz-case.webp';
+import socialKhaadiThumb from '../assets/images/social-khaadi-card.webp';
+import socialKhaadiExpanded from '../assets/images/social-khaadi-case.webp';
+import socialShanFoodsThumb from '../assets/images/social-shan-foods-card.webp';
+import socialShanFoodsExpanded from '../assets/images/social-shan-foods-case.webp';
 
 export interface Service {
   id: string;
