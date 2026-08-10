@@ -43,6 +43,11 @@ import photoArchitecture1200 from '../assets/images/photo-architecture-1200.webp
 import photoProductRetouch480 from '../assets/images/photo-product-retouch-480.webp';
 import photoProductRetouch768 from '../assets/images/photo-product-retouch-768.webp';
 import photoProductRetouch1200 from '../assets/images/photo-product-retouch-1200.webp';
+import socialFoodpandaCampaign from '../assets/images/social-foodpanda-campaign.png';
+import socialJazzCampaign from '../assets/images/social-jazz-campaign.png';
+import socialDarazCampaign from '../assets/images/social-daraz-campaign.png';
+import socialKhaadiCampaign from '../assets/images/social-khaadi-campaign.png';
+import socialShanFoodsCampaign from '../assets/images/social-shan-foods-campaign.png';
 
 export interface Service {
   id: string;
@@ -449,107 +454,103 @@ export const PROJECTS_DATA: Project[] = [
   // ================= SOCIAL MEDIA (5 PROJECTS) =================
   {
     id: "product-launch-campaign",
-    title: "Product Launch Campaign Banners",
+    title: "foodpanda Pakistan Campaign Concept",
     category: "Social Media Posts",
     filterTag: "Social Media",
-    shortDescription: "High-converting multi-platform social media ad suite for an eco-friendly skincare line.",
+    shortDescription: "Landscape campaign concept showing shared Pakistani dining, delivery, and foodpanda convenience.",
     thumbnailBg: "from-emerald-100 via-teal-100 to-cyan-100",
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "Flora Botanica",
-    year: "2024",
+    image: socialFoodpandaCampaign,
+    detailImage: socialFoodpandaCampaign,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "foodpanda Pakistan — independent concept",
+    year: "2026",
     role: "Social Media Designer & Art Director",
-    overview: "Designed 24 customized Instagram carousels, TikTok story covers, and promotional social banners for Flora's spring product collection launch.",
-    challenge: "Creating a cohesive visual narrative across different aspect ratios while keeping typography bold, readable, and thumb-stopping on small mobile feeds.",
-    approach: "Combined product cutouts, organic vector leaf shapes, bold typography scales, and high-contrast CTA placements in Canva and Photoshop.",
-    toolsUsed: ["Canva", "Adobe Photoshop", "Adobe Illustrator"],
-    outcome: "Generated over $120k in direct campaign sales and achieved a 4.8x Return on Ad Spend (ROAS)."
+    overview: "Created an independent foodpanda Pakistan campaign concept built around a shared restaurant moment, delivery arrival, and clear brand-first messaging.",
+    challenge: "Making delivery feel social and immediate while keeping food, people, product touchpoints, and headline readable in one landscape frame.",
+    approach: "Used warm Pakistani night lighting, coral brand cues, a wide dining scene, and strong left-aligned typography for feed-first scanning.",
+    toolsUsed: ["Adobe Photoshop", "Canva", "Adobe Illustrator"],
+    outcome: "Portfolio concept only; no affiliation with foodpanda and no performance claims."
   },
   {
     id: "podcast-cover-infographics",
-    title: "Promotional Visual Series & Infographics",
+    title: "Jazz Pakistan Connectivity Campaign Concept",
     category: "Social Media Posts",
     filterTag: "Social Media",
-    shortDescription: "Illustrated infographic carousels and promotional graphics for a digital podcast launch.",
+    shortDescription: "Landscape telecom campaign concept showing friends, Lahore skyline, smartphones, and shared connection.",
     thumbnailBg: "from-amber-100 via-orange-100 to-rose-100",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "The Design Mindset Podcast",
-    year: "2024",
-    role: "Lead Graphic Designer",
-    overview: "Developed a 10-part social infographic carousel series translating complex design principles into digestible visual slides.",
-    challenge: "Condensing dense educational information into visually engaging, bite-sized slides that encourage bookmarks and shares.",
-    approach: "Created custom vector icons, colorful highlight callouts, and clean typographic hierarchy.",
-    toolsUsed: ["Adobe Illustrator", "Canva", "Adobe Photoshop"],
-    outcome: "Saved over 25,000 times on Instagram and gained 12,000 new podcast listeners."
+    image: socialJazzCampaign,
+    detailImage: socialJazzCampaign,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Jazz Pakistan — independent concept",
+    year: "2026",
+    role: "Social Media Designer & Art Director",
+    overview: "Created an independent Jazz Pakistan campaign concept using a rooftop gathering and Lahore skyline to make mobile connection feel human.",
+    challenge: "Showing network-enabled connection through people and place without cluttering a wide social ad with technical detail.",
+    approach: "Built a red-led visual system, sunset city depth, candid group interaction, and large high-contrast headline placement.",
+    toolsUsed: ["Adobe Photoshop", "Canva", "Adobe Illustrator"],
+    outcome: "Portfolio concept only; no affiliation with Jazz and no performance claims."
   },
   {
     id: "fitness-app-social-kit",
-    title: "Fitness App Social Campaign Kit",
+    title: "Daraz Pakistan Shopping Campaign Concept",
     category: "Social Media Posts",
     filterTag: "Social Media",
-    shortDescription: "High-energy Instagram reel covers, carousel templates, and promotional ad banners for a workout app.",
+    shortDescription: "Landscape e-commerce campaign concept showing one Daraz delivery opening into a full everyday shopping scene.",
     thumbnailBg: "from-lime-100 via-emerald-100 to-teal-100",
-    image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "FitPulse Mobile App",
-    year: "2025",
-    role: "Social Media Graphic Designer",
-    overview: "Created a comprehensive social media marketing design kit featuring 30+ editable templates, dynamic typography layouts, and motion-friendly assets.",
-    challenge: "Maintaining maximum visual energy and high contrast while strictly adhering to brand guidelines across diverse social formats.",
-    approach: "Combined vibrant neon accent colors, bold italic condensed typography, and cut-out action photography.",
-    toolsUsed: ["Canva", "Adobe Photoshop", "Adobe Illustrator"],
-    outcome: "Achieved a 65% increase in social click-through rates and 40,000 new app downloads during launch month."
+    image: socialDarazCampaign,
+    detailImage: socialDarazCampaign,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Daraz Pakistan — independent concept",
+    year: "2026",
+    role: "Social Media Designer & Art Director",
+    overview: "Created an independent Daraz Pakistan campaign concept showing the variety of everyday shopping inside one bright home delivery moment.",
+    challenge: "Communicating product range and app convenience in one believable lifestyle frame while keeping the orange brand block dominant.",
+    approach: "Combined an orange parcel hero, natural home light, multiple product categories, and direct headline hierarchy.",
+    toolsUsed: ["Adobe Photoshop", "Canva", "Adobe Illustrator"],
+    outcome: "Portfolio concept only; no affiliation with Daraz and no performance claims."
   },
   {
     id: "fashion-week-story-templates",
-    title: "Fashion Week Animated Social Stories",
+    title: "Khaadi Pakistan Fashion Campaign Concept",
     category: "Social Media Posts",
     filterTag: "Social Media",
-    shortDescription: "Minimalist fashion story layouts, event countdowns, and behind-the-scenes promotional cards.",
+    shortDescription: "Landscape fashion campaign concept pairing a Khaadi-inspired outfit with Lahore architecture and surrounding textiles.",
     thumbnailBg: "from-stone-100 via-rose-100 to-pink-100",
-    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "Milan Runway Collective",
-    year: "2025",
-    role: "Social Media Art Director",
-    overview: "Designed an elegant set of 15 vertical story templates and video overlays for live coverage during Milan Fashion Week.",
-    challenge: "Creating sophisticated, editorial typography frame layouts that highlight runway imagery without distracting from the clothing.",
-    approach: "Utilized refined serif typography, generous whitespace padding, and subtle animated line borders.",
-    toolsUsed: ["Canva", "Adobe Photoshop", "Figma"],
-    outcome: "Gained over 2.4 million organic story views across Instagram during event week."
+    image: socialKhaadiCampaign,
+    detailImage: socialKhaadiCampaign,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Khaadi Pakistan — independent concept",
+    year: "2026",
+    role: "Social Media Designer & Art Director",
+    overview: "Created an independent Khaadi Pakistan campaign concept that places fashion, textile texture, and Lahore heritage in one editorial landscape frame.",
+    challenge: "Keeping the outfit as focal point while giving textile rolls, architecture, and brand message enough room to tell a fuller story.",
+    approach: "Used warm editorial light, layered fabric foregrounds, heritage architecture, and restrained white typography.",
+    toolsUsed: ["Adobe Photoshop", "Canva", "Adobe Illustrator"],
+    outcome: "Portfolio concept only; no affiliation with Khaadi and no performance claims."
   },
   {
     id: "culinary-reels-graphics",
-    title: "Culinary & Restaurant Social Visuals",
+    title: "Shan Foods Pakistan Family Campaign Concept",
     category: "Social Media Posts",
     filterTag: "Social Media",
-    shortDescription: "Mouth-watering menu promo graphics, recipe carousels, and Instagram grid designs.",
+    shortDescription: "Landscape food campaign concept showing Shan Foods, biryani preparation, spices, and family dining in one scene.",
     thumbnailBg: "from-orange-100 via-amber-100 to-red-100",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "Savor Bistro & Lounge",
-    year: "2025",
-    role: "Visual Content Creator",
-    overview: "Designed social media marketing content including weekly chef specials, holiday reservation cards, and recipe breakdown carousels.",
-    challenge: "Enhancing food photography vibrancy while keeping text badges clear and appetizing.",
-    approach: "Paired warm color grading with playful chalk-style handwritten callouts and bold price tags.",
-    toolsUsed: ["Adobe Photoshop", "Canva"],
-    outcome: "Boosted weekend dinner reservations by 38% through Instagram social marketing."
+    image: socialShanFoodsCampaign,
+    detailImage: socialShanFoodsCampaign,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Shan Foods Pakistan — independent concept",
+    year: "2026",
+    role: "Social Media Designer & Art Director",
+    overview: "Created an independent Shan Foods Pakistan campaign concept centered on a mother-daughter cooking moment, spice prep, and family dining.",
+    challenge: "Showing product use, recipe context, and emotional warmth without losing clarity around the food and package.",
+    approach: "Built a warm kitchen scene with layered ingredients, copper cookware, family depth, and a strong red-and-yellow brand lockup.",
+    toolsUsed: ["Adobe Photoshop", "Canva", "Adobe Illustrator"],
+    outcome: "Portfolio concept only; no affiliation with Shan Foods and no performance claims."
   },
 
   // ================= LOGOS (5 PROJECTS) =================
