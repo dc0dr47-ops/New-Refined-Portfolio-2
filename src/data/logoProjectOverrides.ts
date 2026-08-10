@@ -1,11 +1,9 @@
 import { Project } from './portfolioData';
-import auroraWellnessLogo from './auroraWellnessLogo';
+import auroraWellnessLogo from '../assets/images/logo-aurora-wellness.png';
 import brixtonLogo from '../assets/images/logo-brixton-coffee.webp';
 import nexoraLogo from '../assets/images/logo-nexora-technologies.webp';
 import pixoraLogo from '../assets/images/logo-pixora-studios.webp';
 import luminaLogo from '../assets/images/logo-lumina-boutique.webp';
-
-const brixtonLogoFresh = `${brixtonLogo}?v=20260808-1`;
 
 export const LOGO_PROJECTS_OVERRIDE: Project[] = [
   {
@@ -35,8 +33,8 @@ export const LOGO_PROJECTS_OVERRIDE: Project[] = [
     filterTag: 'Logos',
     shortDescription: 'Editorial B monogram crossed by a warm coffee leaf, balancing craft heritage with a polished specialty-coffee feel.',
     thumbnailBg: 'from-amber-50 via-white to-orange-50',
-    image: brixtonLogoFresh,
-    detailImage: brixtonLogoFresh,
+    image: brixtonLogo,
+    detailImage: brixtonLogo,
     detailAspect: '3/2',
     gallery: [],
     client: 'Brixton Coffee Co.',
