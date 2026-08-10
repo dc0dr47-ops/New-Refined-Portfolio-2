@@ -63,6 +63,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project) => {
               const isLogoProject = project.filterTag === 'Logos';
+              const isSocialProject = project.filterTag === 'Social Media';
 
               return (
                 <div
@@ -71,7 +72,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                   className="group bg-white rounded-3xl border border-[#FFE9E0] shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
                 >
                   <div>
-                    <div className={`relative aspect-[4/3] overflow-hidden ${isLogoProject ? 'bg-white' : 'bg-slate-100'}`}>
+                    <div className={`relative aspect-[4/3] overflow-hidden ${isLogoProject || isSocialProject ? 'bg-white' : 'bg-slate-100'}`}>
                       <img
                         src={project.image}
                         srcSet={project.imageSrcSet}
@@ -81,7 +82,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                         loading="lazy"
                         decoding="async"
                         className={`w-full h-full transition-transform duration-500 ease-out ${
-                          isLogoProject
+                          isLogoProject || isSocialProject
                             ? 'object-contain p-4 sm:p-5'
                             : 'object-cover group-hover:scale-108'
                         }`}
