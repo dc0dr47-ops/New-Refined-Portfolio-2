@@ -1,5 +1,5 @@
 import { Project } from './portfolioData';
-import auroraWellnessLogo from '../assets/images/logo-aurora-wellness.png';
+import auroraWellnessLogo from '../assets/images/logo-aurora-wellness.webp';
 import brixtonLogo from '../assets/images/logo-brixton-coffee.webp';
 import nexoraLogo from '../assets/images/logo-nexora-technologies.webp';
 import pixoraLogo from '../assets/images/logo-pixora-studios.webp';
@@ -11,7 +11,7 @@ export const LOGO_PROJECTS_OVERRIDE: Project[] = [
     title: 'Aurora Wellness Logo Identity',
     category: 'Logo Designing',
     filterTag: 'Logos',
-    shortDescription: 'Clean wellness logo featuring a custom letter A and flowing wave symbol that communicates balance, movement, and renewal.',
+    shortDescription: 'Wellness brand logo combining a letter A and a wave to represent balance, healing, and renewal.',
     thumbnailBg: 'from-cyan-100 via-sky-100 to-blue-100',
     image: auroraWellnessLogo,
     detailImage: auroraWellnessLogo,
