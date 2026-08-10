@@ -43,11 +43,16 @@ import photoArchitecture1200 from '../assets/images/photo-architecture-1200.webp
 import photoProductRetouch480 from '../assets/images/photo-product-retouch-480.webp';
 import photoProductRetouch768 from '../assets/images/photo-product-retouch-768.webp';
 import photoProductRetouch1200 from '../assets/images/photo-product-retouch-1200.webp';
-import socialFoodpandaCampaign from '../assets/images/social-foodpanda-campaign.png';
-import socialJazzCampaign from '../assets/images/social-jazz-campaign.png';
-import socialDarazCampaign from '../assets/images/social-daraz-campaign.png';
-import socialKhaadiCampaign from '../assets/images/social-khaadi-campaign.png';
-import socialShanFoodsCampaign from '../assets/images/social-shan-foods-campaign.png';
+import socialFoodpandaThumb from '../assets/images/social-foodpanda-thumb.png';
+import socialFoodpandaExpanded from '../assets/images/social-foodpanda-expanded.webp';
+import socialJazzThumb from '../assets/images/social-jazz-thumb.png';
+import socialJazzExpanded from '../assets/images/social-jazz-expanded.webp';
+import socialDarazThumb from '../assets/images/social-daraz-thumb.png';
+import socialDarazExpanded from '../assets/images/social-daraz-expanded.webp';
+import socialKhaadiThumb from '../assets/images/social-khaadi-thumb.png';
+import socialKhaadiExpanded from '../assets/images/social-khaadi-expanded.webp';
+import socialShanFoodsThumb from '../assets/images/social-shan-foods-thumb.png';
+import socialShanFoodsExpanded from '../assets/images/social-shan-foods-expanded.webp';
 
 export interface Service {
   id: string;
@@ -459,8 +464,8 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Social Media",
     shortDescription: "Landscape campaign concept showing shared Pakistani dining, delivery, and foodpanda convenience.",
     thumbnailBg: "from-emerald-100 via-teal-100 to-cyan-100",
-    image: socialFoodpandaCampaign,
-    detailImage: socialFoodpandaCampaign,
+    image: socialFoodpandaThumb,
+    detailImage: socialFoodpandaExpanded,
     detailAspect: '16/9',
     gallery: [],
     client: "foodpanda Pakistan — independent concept",
@@ -479,8 +484,8 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Social Media",
     shortDescription: "Landscape telecom campaign concept showing friends, Lahore skyline, smartphones, and shared connection.",
     thumbnailBg: "from-amber-100 via-orange-100 to-rose-100",
-    image: socialJazzCampaign,
-    detailImage: socialJazzCampaign,
+    image: socialJazzThumb,
+    detailImage: socialJazzExpanded,
     detailAspect: '16/9',
     gallery: [],
     client: "Jazz Pakistan — independent concept",
@@ -499,8 +504,8 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Social Media",
     shortDescription: "Landscape e-commerce campaign concept showing one Daraz delivery opening into a full everyday shopping scene.",
     thumbnailBg: "from-lime-100 via-emerald-100 to-teal-100",
-    image: socialDarazCampaign,
-    detailImage: socialDarazCampaign,
+    image: socialDarazThumb,
+    detailImage: socialDarazExpanded,
     detailAspect: '16/9',
     gallery: [],
     client: "Daraz Pakistan — independent concept",
@@ -519,8 +524,8 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Social Media",
     shortDescription: "Landscape fashion campaign concept pairing a Khaadi-inspired outfit with Lahore architecture and surrounding textiles.",
     thumbnailBg: "from-stone-100 via-rose-100 to-pink-100",
-    image: socialKhaadiCampaign,
-    detailImage: socialKhaadiCampaign,
+    image: socialKhaadiThumb,
+    detailImage: socialKhaadiExpanded,
     detailAspect: '16/9',
     gallery: [],
     client: "Khaadi Pakistan — independent concept",
@@ -539,8 +544,8 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Social Media",
     shortDescription: "Landscape food campaign concept showing Shan Foods, biryani preparation, spices, and family dining in one scene.",
     thumbnailBg: "from-orange-100 via-amber-100 to-red-100",
-    image: socialShanFoodsCampaign,
-    detailImage: socialShanFoodsCampaign,
+    image: socialShanFoodsThumb,
+    detailImage: socialShanFoodsExpanded,
     detailAspect: '16/9',
     gallery: [],
     client: "Shan Foods Pakistan — independent concept",
