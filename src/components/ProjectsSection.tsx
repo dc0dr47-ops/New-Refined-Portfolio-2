@@ -82,9 +82,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                         loading="lazy"
                         decoding="async"
                         className={`w-full h-full transition-transform duration-500 ease-out ${
-                          isLogoProject || isSocialProject
+                          isLogoProject
                             ? 'object-contain p-4 sm:p-5'
-                            : 'object-cover group-hover:scale-108'
+                            : isSocialProject
+                              ? 'object-cover'
+                              : 'object-cover group-hover:scale-108'
                         }`}
                       />
 
