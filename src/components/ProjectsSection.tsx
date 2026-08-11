@@ -64,6 +64,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
             {filteredProjects.map((project) => {
               const isLogoProject = project.filterTag === 'Logos';
               const isSocialProject = project.filterTag === 'Social Media';
+              const imageFitClass = isLogoProject
+                ? 'object-contain p-4 sm:p-5'
+                : isSocialProject
+                  ? 'object-fill !p-0 !m-0 block'
+                  : 'object-cover group-hover:scale-108';
 
               return (
                 <div
@@ -72,7 +77,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                   className="group bg-white rounded-3xl border border-[#FFE9E0] shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
                 >
                   <div>
-                    <div className={`relative aspect-[4/3] overflow-hidden ${isLogoProject || isSocialProject ? 'bg-white' : 'bg-slate-100'}`}>
+                    <div className={`relative aspect-[4/3] overflow-hidden ${isLogoProject ? 'bg-white' : isSocialProject ? 'bg-transparent' : 'bg-slate-100'}`}>
                       <img
                         src={project.image}
                         srcSet={project.imageSrcSet}
@@ -81,13 +86,8 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                         referrerPolicy="no-referrer"
                         loading="lazy"
                         decoding="async"
-                        className={`w-full h-full transition-transform duration-500 ease-out ${
-                          isLogoProject
-                            ? 'object-contain p-4 sm:p-5'
-                            : isSocialProject
-                              ? 'object-cover'
-                              : 'object-cover group-hover:scale-108'
-                        }`}
+                        className={`w-full h-full transition-transform duration-500 ease-out ${imageFitClass}`}
+                        style={isSocialProject ? { objectFit: 'fill', padding: 0, margin: 0 } : undefined}
                       />
 
                       <div className="absolute inset-0 bg-[#20284F]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
