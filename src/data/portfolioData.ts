@@ -53,6 +53,16 @@ import socialKhaadiThumb from '../assets/images/social-khaadi-card.webp';
 import socialKhaadiExpanded from '../assets/images/social-khaadi-case.webp';
 import socialShanFoodsThumb from '../assets/images/social-shan-foods-card.webp';
 import socialShanFoodsExpanded from '../assets/images/social-shan-foods-case.webp';
+import brandingKhaadiThumb from '../assets/images/branding-khaadi-card.webp';
+import brandingKhaadiExpanded from '../assets/images/branding-khaadi-case.webp';
+import brandingShanFoodsThumb from '../assets/images/branding-shan-foods-card.webp';
+import brandingShanFoodsExpanded from '../assets/images/branding-shan-foods-case.webp';
+import brandingCareemThumb from '../assets/images/branding-careem-card.webp';
+import brandingCareemExpanded from '../assets/images/branding-careem-case.webp';
+import brandingPsoThumb from '../assets/images/branding-pso-card.webp';
+import brandingPsoExpanded from '../assets/images/branding-pso-case.webp';
+import brandingJazzThumb from '../assets/images/branding-jazz-card.webp';
+import brandingJazzExpanded from '../assets/images/branding-jazz-case.webp';
 
 export interface Service {
   id: string;
@@ -662,109 +672,104 @@ export const PROJECTS_DATA: Project[] = [
 
   // ================= BRANDING (5 PROJECTS) =================
   {
-    id: "modern-brand-identity",
-    title: "Modern Brand Identity & Guidelines",
+    id: "khaadi-brand-identity-concept",
+    title: "Khaadi Brand Identity Concept",
     category: "Branding",
     filterTag: "Branding",
-    shortDescription: "Complete visual identity including geometric logo design, color swatches, and typography rules.",
-    thumbnailBg: "from-violet-100 via-purple-100 to-indigo-100",
-    image: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "Aura Architecture Studio",
-    year: "2024",
+    shortDescription: "Textile-led identity study with packaging, apparel tags, typography, and refined indigo palette.",
+    thumbnailBg: "from-indigo-100 via-stone-100 to-amber-100",
+    image: brandingKhaadiThumb,
+    detailImage: brandingKhaadiExpanded,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Khaadi — Independent Concept",
+    year: "2026",
     role: "Brand Identity Designer",
-    overview: "Crafted a clean, geometric logo mark, stationery package, brand guidelines book, and digital assets for an upscale architectural firm.",
-    challenge: "Refining a complex monogram concept into an elegant, timeless, minimalist symbol that communicates precision and warmth.",
-    approach: "Executed golden-ratio grid alignment in Adobe Illustrator, paired with custom typography kerning and a warm architectural color palette.",
-    toolsUsed: ["Adobe Illustrator", "Figma"],
-    outcome: "Successfully rebranded Aura Studio across 5 regional offices and elevated client perception."
+    overview: "Explored cohesive Khaadi identity direction rooted in Pakistani textile culture, tactile materials, and modern retail presentation.",
+    challenge: "Balancing heritage craft cues with cleaner, premium system across apparel, packaging, and digital touchpoints.",
+    approach: "Built indigo, terracotta, cream, and muted-gold palette; paired serif and sans typography with woven monogram and textile-led applications.",
+    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "Figma", "AI Tools"],
+    outcome: "Independent redesign concept showing flexible identity system across packaging, stationery, apparel tags, and retail presentation."
   },
   {
-    id: "artisan-coffee-branding",
-    title: "Artisan Roastery Brand Identity",
+    id: "shan-foods-brand-identity-concept",
+    title: "Shan Foods Brand Identity Concept",
     category: "Branding",
     filterTag: "Branding",
-    shortDescription: "Handcrafted logo badges, eco-friendly packaging, and brand guidelines for specialty coffee.",
-    thumbnailBg: "from-amber-100 via-stone-100 to-orange-100",
-    image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "Craft & Roast Co.",
-    year: "2025",
+    shortDescription: "Food-brand identity study with spice packaging, recipe cards, family-focused visuals, and shelf presence.",
+    thumbnailBg: "from-red-100 via-amber-100 to-emerald-100",
+    image: brandingShanFoodsThumb,
+    detailImage: brandingShanFoodsExpanded,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Shan Foods — Independent Concept",
+    year: "2026",
     role: "Brand Identity & Packaging Designer",
-    overview: "Developed a warm, handcrafted brand identity featuring custom vector emblem designs, eco-friendly coffee bag packaging, and cafe collateral.",
-    challenge: "Crafting a nostalgic yet contemporary aesthetic that stands out in a crowded specialty coffee retail market.",
-    approach: "Hand-sketched emblem concepts before vectorizing in Illustrator, pairing rustic typography with warm earth-tone palettes.",
-    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop"],
-    outcome: "Helped Craft & Roast launch 3 new retail locations and expand bag distribution by 200%."
+    overview: "Developed independent visual direction for Shan Foods centered on warmth, recognizable product families, and everyday Pakistani cooking.",
+    challenge: "Keeping multiple spice products visually connected while allowing each flavor variant to stand apart on shelf.",
+    approach: "Used deep red anchor, saffron and green product accents, and applications around packets, recipe cards, menus, and kitchen storytelling.",
+    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "Figma", "AI Tools"],
+    outcome: "Independent concept demonstrating packaging architecture, product variation, recipe communication, and family-oriented applications."
   },
   {
-    id: "cyber-security-identity",
-    title: "Quantum Security Brand System",
+    id: "careem-brand-identity-concept",
+    title: "Careem Pakistan Brand Identity Concept",
     category: "Branding",
     filterTag: "Branding",
-    shortDescription: "Sleek tech logo design, dynamic brand guidelines, and corporate identity system for a cybersecurity firm.",
-    thumbnailBg: "from-cyan-100 via-blue-100 to-indigo-100",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "ShieldX Cyber Labs",
-    year: "2025",
-    role: "Lead Brand Strategist & Designer",
-    overview: "Created an authoritative tech brand identity system including vector logo mark, dark-mode brand manual, and digital collateral.",
-    challenge: "Designing a security symbol that avoids overused shield clichés while conveying trust, intelligence, and modern speed.",
-    approach: "Combined overlapping geometric node structures with sharp cyan-to-indigo gradients in Adobe Illustrator.",
-    toolsUsed: ["Adobe Illustrator", "Figma"],
-    outcome: "Secured enterprise client trust during $15M Series A funding round."
+    shortDescription: "Mobility identity study spanning vehicle graphics, wayfinding, driver cards, bags, and city navigation.",
+    thumbnailBg: "from-emerald-100 via-lime-100 to-stone-100",
+    image: brandingCareemThumb,
+    detailImage: brandingCareemExpanded,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Careem Pakistan — Independent Concept",
+    year: "2026",
+    role: "Brand Identity Designer",
+    overview: "Explored clearer mobility identity system for Careem Pakistan using route language, approachable wayfinding, and consistent green applications.",
+    challenge: "Making one visual language work across moving vehicles, street signage, printed materials, and rider interactions.",
+    approach: "Extended route motif into car graphics, posters, bags, maps, staff cards, and directional signage with simple readable layouts.",
+    toolsUsed: ["Adobe Illustrator", "Figma", "Adobe Photoshop", "AI Tools"],
+    outcome: "Independent concept showing how mobility system connects streetside branding, rider materials, and operational touchpoints."
   },
   {
-    id: "boutique-hotel-branding",
-    title: "Mirage Boutique Hotel Visual Identity",
+    id: "pso-brand-identity-concept",
+    title: "PSO Brand Identity Concept",
     category: "Branding",
     filterTag: "Branding",
-    shortDescription: "Luxury hospitality branding, gilded stationery, door signs, and custom monogram design.",
-    thumbnailBg: "from-amber-100 via-rose-100 to-neutral-100",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "Mirage Luxury Resorts",
-    year: "2024",
-    role: "Senior Visual Designer",
-    overview: "Designed complete luxury branding collateral including foil-stamped room key cards, restaurant menus, spa packaging, and hotel signage.",
-    challenge: "Establishing an atmosphere of high-end relaxation and timeless elegance across both print and digital touchpoints.",
-    approach: "Utilized custom serif typography, gold-leaf accent palettes, and minimalist geometric palm motifs.",
-    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop"],
-    outcome: "Voted 'Top 10 Hotel Brand Designs' by Hospitality Design Magazine."
+    shortDescription: "Energy-retail identity study with station signage, lubricant packaging, uniforms, vehicle graphics, and guidelines.",
+    thumbnailBg: "from-emerald-100 via-slate-100 to-red-100",
+    image: brandingPsoThumb,
+    detailImage: brandingPsoExpanded,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Pakistan State Oil — Independent Concept",
+    year: "2026",
+    role: "Brand Identity & Environmental Graphics Designer",
+    overview: "Created independent PSO identity study focused on dependable service, visible roadside communication, and consistent retail ecosystem.",
+    challenge: "Maintaining legibility and recognition across large stations, small product labels, uniforms, and moving vehicles.",
+    approach: "Built applications around PSO green, white, red, and navy across canopy signage, fuel displays, lubricant cans, caps, uniforms, and guidelines.",
+    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "Figma", "AI Tools"],
+    outcome: "Independent concept showing scalable identity system across environmental graphics, product packaging, apparel, and fleet applications."
   },
   {
-    id: "organic-skincare-packaging",
-    title: "Natura Organic Skincare Packaging",
+    id: "jazz-brand-identity-concept",
+    title: "Jazz Pakistan Brand Identity Concept",
     category: "Branding",
     filterTag: "Branding",
-    shortDescription: "Minimalist eco-conscious glass bottle packaging, outer box designs, and brand system.",
-    thumbnailBg: "from-teal-100 via-emerald-100 to-stone-100",
-    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1000&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80"
-    ],
-    client: "Natura Botanicals",
-    year: "2025",
-    role: "Packaging & Brand Designer",
-    overview: "Developed recyclable glass bottle labels and unboxing package structures for an organic botanical skincare brand.",
-    challenge: "Creating clean product labeling that holds essential ingredient compliance text while remaining ultra-minimalist and elegant.",
-    approach: "Utilized high-contrast sans-serif typography paired with subtle blind debossing on textured paper stock.",
-    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop"],
-    outcome: "Selected for nationwide retail distribution across Sephora and specialty beauty stores."
+    shortDescription: "Telecom identity study with retail graphics, SIM packs, activation cards, billboards, and signal-led visual language.",
+    thumbnailBg: "from-red-100 via-rose-100 to-slate-100",
+    image: brandingJazzThumb,
+    detailImage: brandingJazzExpanded,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Jazz Pakistan — Independent Concept",
+    year: "2026",
+    role: "Brand Identity & Campaign Designer",
+    overview: "Explored bold Jazz Pakistan identity direction connecting telecom retail, onboarding materials, outdoor advertising, and customer touchpoints.",
+    challenge: "Creating one energetic system that stays clear on small SIM packaging and powerful at storefront and billboard scale.",
+    approach: "Used red-and-black palette with rhythmic signal lines across shopfronts, SIM packs, lanyards, activation cards, billboards, and guidelines.",
+    toolsUsed: ["Adobe Illustrator", "Figma", "Adobe Photoshop", "AI Tools"],
+    outcome: "Independent concept demonstrating identity consistency across retail environments, telecom packaging, customer onboarding, and outdoor media."
   },
 
   // ================= WEB DESIGN (5 PROJECTS) =================
