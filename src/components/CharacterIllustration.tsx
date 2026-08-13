@@ -10,6 +10,9 @@ interface CharacterProps {
 }
 
 export const CharacterIllustration: React.FC<CharacterProps> = ({ pose, className = '', imageSrc }) => {
+  const isHero = pose === 'hero';
+  const imageLoading = isHero ? 'eager' : 'lazy';
+
   if (pose === 'hero') {
     return (
       <div className={`relative w-full h-full max-h-[32vh] sm:max-h-[48vh] lg:max-h-[58vh] xl:max-h-[64vh] aspect-square mx-auto flex items-center justify-center ${className}`}>
@@ -20,6 +23,9 @@ export const CharacterIllustration: React.FC<CharacterProps> = ({ pose, classNam
         <img
           src={imageSrc || heroPortrait}
           alt="Aftab Nadeem - Graphic Designer & Creative Technologist"
+          loading={imageLoading}
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full max-h-full object-contain relative z-10 select-none drop-shadow-xl"
         />
       </div>
@@ -36,6 +42,8 @@ export const CharacterIllustration: React.FC<CharacterProps> = ({ pose, classNam
         <img
           src={imageSrc || aboutPortrait}
           alt="Aftab Nadeem - About Portrait"
+          loading={imageLoading}
+          decoding="async"
           className="w-full h-full max-h-full object-contain relative z-10 select-none drop-shadow-lg"
         />
       </div>
@@ -51,6 +59,8 @@ export const CharacterIllustration: React.FC<CharacterProps> = ({ pose, classNam
       <img
         src={imageSrc || contactPortrait}
         alt="Aftab Nadeem - Contact Portrait"
+        loading={imageLoading}
+        decoding="async"
         className="w-full h-full max-h-full object-contain relative z-10 select-none drop-shadow-lg"
       />
     </div>
