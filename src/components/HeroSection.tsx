@@ -4,6 +4,12 @@ import { DESIGNER_INFO } from '../data/portfolioData';
 import { CharacterIllustration } from './CharacterIllustration';
 import { FloatingIcon } from './FloatingIcon';
 
+const HERO_STATS = [
+  { label: "Years Experience", value: "1.5+" },
+  { label: "Independent Projects Completed", value: "100+" },
+  { label: "Happy Clients", value: "4" }
+];
+
 export const HeroSection: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
 
@@ -149,7 +155,7 @@ export const HeroSection: React.FC = () => {
 
         </div>
 
-        {/* Lower Row: All Four Statistics Cards & Scroll Indicator */}
+        {/* Lower Row: Three Statistics Cards & Scroll Indicator */}
         <div className="hero-stats-wrapper pt-2 sm:pt-3 border-t border-[#FFE9E0]/80 flex-none w-full relative">
           
           {/* Animated Scroll Indicator */}
@@ -179,8 +185,8 @@ export const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="hero-stats-grid grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 lg:gap-4 w-full">
-            {DESIGNER_INFO.stats.map((stat, idx) => (
+          <div className="hero-stats-grid grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 lg:gap-4 w-full">
+            {HERO_STATS.map((stat, idx) => (
               <div
                 key={idx}
                 className="stat-card bg-white/80 backdrop-blur-xs p-2 sm:p-2.5 lg:p-3 rounded-2xl border border-[#FFE9E0] text-center shadow-2xs flex flex-col justify-center"
