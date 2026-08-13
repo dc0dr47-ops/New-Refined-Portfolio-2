@@ -84,7 +84,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
           className="flex items-center gap-2 group"
         >
           <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl sm:rounded-2xl bg-gradient-to-tr from-[#FF745A] to-[#FF947E] flex items-center justify-center text-white font-display font-bold text-base sm:text-lg shadow-xs group-hover:scale-105 transition-transform">
-            AV
+            AN
           </div>
           <div className="flex items-center">
             <span className="font-display font-bold text-lg sm:text-xl text-[#20284F] tracking-tight group-hover:text-[#FF745A] transition-colors">
