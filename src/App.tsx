@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { lazy, Suspense, useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
@@ -9,10 +9,15 @@ import { ProcessSection } from './components/ProcessSection';
 import { ContactBanner } from './components/ContactBanner';
 import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
-import { ProjectModal } from './components/ProjectModal';
-import { ResumeModal } from './components/ResumeModal';
-import { WhatsAppButton } from './components/WhatsAppButton';
 import { Project } from './data/portfolioData';
+import { WhatsAppButton } from './components/WhatsAppButton';
+
+const ProjectModal = lazy(() =>
+  import('./components/ProjectModal').then(({ ProjectModal }) => ({ default: ProjectModal }))
+);
+const ResumeModal = lazy(() =>
+  import('./components/ResumeModal').then(({ ResumeModal }) => ({ default: ResumeModal }))
+);
 
 export default function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -62,16 +67,18 @@ export default function App() {
       <Footer />
 
       {/* Lightbox / Case Study Modal */}
-      <ProjectModal
-        project={selectedProject}
-        onClose={() => setSelectedProject(null)}
-      />
+      <Suspense fallback={null}>
+        <ProjectModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
 
-      {/* Resume Download / View Modal */}
-      <ResumeModal
-        isOpen={resumeOpen}
-        onClose={() => setResumeOpen(false)}
-      />
+        {/* Resume Download / View Modal */}
+        <ResumeModal
+          isOpen={resumeOpen}
+          onClose={() => setResumeOpen(false)}
+        />
+      </Suspense>
 
       {/* Floating WhatsApp Contact Button */}
       <WhatsAppButton />
