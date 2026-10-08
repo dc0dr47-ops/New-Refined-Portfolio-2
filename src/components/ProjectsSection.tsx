@@ -73,7 +73,13 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
               return (
                 <div
                   key={project.id}
-                  onClick={() => onSelectProject(project)}
+                  onClick={() => {
+                    if (project.filterTag === 'Web Design' && project.liveUrl) {
+                      window.open(project.liveUrl, '_blank', 'noopener,noreferrer');
+                      return;
+                    }
+                    onSelectProject(project);
+                  }}
                   className="group bg-white rounded-3xl border border-[#FFE9E0] shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
                 >
                   <div>
@@ -93,7 +99,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                       <div className="absolute inset-0 bg-[#20284F]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
                         <div className="px-5 py-2.5 rounded-full bg-white text-[#20284F] font-display font-bold text-xs sm:text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 flex items-center gap-2">
                           <Eye className="w-4 h-4 text-[#FF745A]" />
-                          <span>View Case Study</span>
+                          <span>{project.filterTag === 'Web Design' ? 'Visit Website' : 'View Case Study'}</span>
                         </div>
                       </div>
                     </div>
@@ -113,7 +119,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                       {project.category}
                     </span>
                     <span className="flex shrink-0 items-center gap-1 text-xs font-bold text-[#FF745A] group-hover:translate-x-1 transition-transform">
-                      <span>View Case Study</span>
+                      <span>{project.filterTag === 'Web Design' ? 'Visit Website' : 'View Case Study'}</span>
                       <ArrowUpRight className="w-4 h-4" />
                     </span>
                   </div>
