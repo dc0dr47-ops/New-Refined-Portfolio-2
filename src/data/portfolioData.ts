@@ -99,6 +99,7 @@ export interface Project {
   detailImage?: string;
   detailImageSrcSet?: string;
   detailAspect?: '16/9' | '4/3' | '3/2' | 'wide';
+  liveUrl?: string;
   gallery: string[];
   client: string;
   year: string;
@@ -808,6 +809,7 @@ export const PROJECTS_DATA: Project[] = [
     image: "https://image.thum.io/get/width/1200/crop/800/noanimate/https://cosmetics-beauty-supplies.ai.studio/",
     detailImage: "https://image.thum.io/get/width/1200/crop/800/noanimate/https://cosmetics-beauty-supplies.ai.studio/",
     detailAspect: '16/9',
+  liveUrl: "https://cosmetics-beauty-supplies.ai.studio/",
     gallery: [],
     client: "Cosmetics & Beauty Supplies",
     year: "2026",
