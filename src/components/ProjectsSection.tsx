@@ -74,15 +74,20 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                 <div
                   key={project.id}
                   onClick={() => {
-                    if (project.filterTag === 'Web Design' && project.liveUrl) {
-                      window.open(project.liveUrl, '_blank');
-                      return;
-                    }
-                    onSelectProject(project);
+                    if (project.filterTag !== 'Web Design') onSelectProject(project);
                   }}
                   className="group bg-white rounded-3xl border border-[#FFE9E0] shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
                 >
                   <div>
+                    {project.filterTag === 'Web Design' && project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open ${project.title}`}
+                        className="absolute inset-0 z-30 cursor-pointer"
+                      />
+                    )}
                     <div className={`relative aspect-[4/3] overflow-hidden ${isLogoProject ? 'bg-white' : isSocialProject ? 'bg-transparent' : 'bg-slate-100'}`}>
                       <img
                         src={project.image}
