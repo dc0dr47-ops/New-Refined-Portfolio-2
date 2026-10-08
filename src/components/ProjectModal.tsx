@@ -75,8 +75,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               sizes="(min-width: 1024px) 832px, (min-width: 640px) calc(100vw - 112px), calc(100vw - 56px)"
               alt={project.title}
               referrerPolicy="no-referrer"
+              loading="lazy"
               decoding="async"
-              fetchPriority="high"
+              fetchPriority="auto"
               className={`w-full h-full ${project.detailImage ? 'object-contain' : 'object-cover'}`}
             />
           </div>
@@ -181,6 +182,8 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                       src={imgUrl}
                       alt={`Gallery mockup ${idx + 1}`}
                       referrerPolicy="no-referrer"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>
