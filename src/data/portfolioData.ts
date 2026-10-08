@@ -53,6 +53,9 @@ import socialKhaadiThumb from '../assets/images/social-khaadi-card.webp';
 import socialKhaadiExpanded from '../assets/images/social-khaadi-case.webp';
 import socialShanFoodsThumb from '../assets/images/social-shan-foods-card.webp';
 import socialShanFoodsExpanded from '../assets/images/social-shan-foods-case.webp';
+
+const christmasSantaThumbnail = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x64\x72\x6f\x70\x62\x6f\x78\x2e\x63\x6f\x6d\x2f\x73\x63\x6c\x2f\x66\x69\x2f\x68\x6d\x69\x36\x32\x6f\x62\x31\x39\x78\x6d\x77\x32\x35\x65\x63\x30\x35\x38\x68\x61\x2f\x43\x68\x61\x74\x47\x50\x54\x2d\x49\x6d\x61\x67\x65\x2d\x4f\x63\x74\x2d\x38\x2d\x32\x30\x32\x36\x2d\x31\x32\x5f\x30\x39\x5f\x31\x32\x2d\x50\x4d\x2e\x70\x6e\x67\x3f\x72\x6c\x6b\x65\x79\x3d\x65\x37\x69\x70\x74\x71\x35\x62\x77\x77\x71\x73\x38\x32\x66\x37\x6f\x38\x6a\x62\x79\x32\x72\x30\x32\x26\x73\x74\x3d\x70\x6d\x73\x61\x67\x68\x6b\x30\x26\x64\x6c\x3d\x31";
+const christmasSantaExpanded = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x64\x72\x6f\x70\x62\x6f\x78\x2e\x63\x6f\x6d\x2f\x73\x63\x6c\x2f\x66\x69\x2f\x38\x70\x30\x76\x76\x6f\x69\x74\x64\x79\x70\x74\x72\x36\x72\x79\x37\x73\x67\x75\x71\x2f\x43\x68\x61\x74\x47\x50\x54\x2d\x49\x6d\x61\x67\x65\x2d\x4f\x63\x74\x2d\x38\x2d\x32\x30\x32\x36\x2d\x31\x32\x5f\x30\x35\x5f\x34\x32\x2d\x50\x4d\x2e\x70\x6e\x67\x3f\x72\x6c\x6b\x65\x79\x3d\x35\x6f\x75\x6c\x30\x38\x6d\x79\x31\x6f\x37\x32\x70\x76\x34\x39\x65\x6b\x72\x77\x39\x67\x6b\x33\x35\x26\x73\x74\x3d\x6b\x38\x7a\x63\x72\x7a\x63\x78\x26\x64\x6c\x3d\x31";
 import brandingKhaadiThumb from '../assets/images/branding-khaadi-card.webp';
 import brandingKhaadiExpanded from '../assets/images/branding-khaadi-case.webp';
 import brandingShanFoodsThumb from '../assets/images/branding-shan-foods-card.webp';
@@ -243,6 +246,27 @@ export const TOOLS_DATA: Tool[] = [
 
 export const PROJECTS_DATA: Project[] = [
   // ================= PROJECTS =================
+  {
+    id: "christmas-santa-reindeer-illustration",
+    title: "Santa & Reindeer Christmas Illustration Collection",
+    category: "Vector Illustration",
+    filterTag: "Illustration",
+    shortDescription: "Festive Santa and reindeer illustrations created for Christmas artwork, seasonal graphics, merchandise, and promotional design.",
+    thumbnailBg: "from-red-100 via-white to-green-100",
+    image: christmasSantaThumbnail,
+    detailImage: christmasSantaExpanded,
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Christmas Illustration Collection",
+    year: "2026",
+    role: "Illustrator & Character Designer",
+    overview: "Created a cheerful Christmas illustration collection centered around Santa Claus and reindeer, with festive compositions featuring gifts, Christmas trees, wreaths, stockings, ornaments, and seasonal characters.",
+    challenge: "Maintain consistent character styling, proportions, expressive poses, clean outlines, and festive color balance across multiple Christmas illustration concepts.",
+    approach: "Built each illustration around clear silhouettes, playful character expressions, bold outlines, simple color blocking, and carefully arranged seasonal elements to keep collection cohesive and versatile.",
+    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "AI Tools"],
+    outcome: "Delivered a versatile festive illustration collection suitable for Christmas campaigns, greeting graphics, apparel, stickers, packaging, social media, and other seasonal applications."
+  },
+
   {
     id: "skull-typography-apparel",
     title: "Skull Typography Apparel Collection",
