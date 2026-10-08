@@ -795,6 +795,29 @@ export const PROJECTS_DATA: Project[] = [
     toolsUsed: ["Adobe Illustrator", "Figma", "Adobe Photoshop", "AI Tools"],
     outcome: "Independent concept demonstrating identity consistency across retail environments, telecom packaging, customer onboarding, and outdoor media."
   },
+,
+
+  // ================= WEB DESIGN =================
+  {
+    id: "cosmetics-beauty-supplies-website",
+    title: "Cosmetics & Beauty Supplies E-Commerce Website",
+    category: "Web Design",
+    filterTag: "Web Design",
+    shortDescription: "Modern responsive e-commerce website for a cosmetics and beauty supplies business, focused on clear product presentation, easy browsing, and mobile-friendly shopping.",
+    thumbnailBg: "from-pink-100 via-white to-rose-100",
+    image: "https://image.thum.io/get/width/1200/crop/800/noanimate/https://cosmetics-beauty-supplies.ai.studio/",
+    detailImage: "https://image.thum.io/get/width/1200/crop/800/noanimate/https://cosmetics-beauty-supplies.ai.studio/",
+    detailAspect: '16/9',
+    gallery: [],
+    client: "Cosmetics & Beauty Supplies",
+    year: "2026",
+    role: "Web Designer & UI/UX Designer",
+    overview: "Designed a modern responsive web experience for a cosmetics and beauty supplies business, combining product-focused layouts, clear navigation, promotional sections, and a polished visual presentation.",
+    challenge: "Present a wide range of beauty products in a clean, easy-to-navigate interface while keeping the experience responsive and visually engaging across desktop and mobile.",
+    approach: "Built a structured e-commerce layout with strong visual hierarchy, product-focused sections, clear calls to action, responsive spacing, and a clean beauty-focused aesthetic.",
+    toolsUsed: ["Figma", "Adobe Photoshop", "Adobe Illustrator", "AI Tools"],
+    outcome: "Delivered a polished responsive website concept designed to give a cosmetics and beauty supplies business a stronger online presence and clearer product-shopping experience."
+  },
 
 ];
 
