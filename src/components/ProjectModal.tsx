@@ -82,6 +82,20 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             />
           </div>
 
+          {project.liveUrl && (
+            <div className="flex items-center gap-2 px-1 -mt-4">
+              <span className="text-sm font-semibold text-[#20284F]">Live Website:</span>
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-[#FF745A] hover:underline break-all"
+              >
+                {project.liveUrl}
+              </a>
+            </div>
+          )}
+
           {/* Key Quick Metadata Strip */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 bg-white p-5 rounded-2xl border border-[#FFE9E0]">
             <div>
