@@ -76,7 +76,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                   onClick={() => {
                     if (project.filterTag !== 'Web Design') onSelectProject(project);
                   }}
-                  className="group bg-white rounded-3xl border border-[#FFE9E0] shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
+                  className="group relative bg-white rounded-3xl border border-[#FFE9E0] shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
                 >
                   <div>
                     {project.filterTag === 'Web Design' && project.liveUrl && (
