@@ -53,7 +53,7 @@ import socialKhaadiThumb from '../assets/images/social-khaadi-card.webp';
 import socialKhaadiExpanded from '../assets/images/social-khaadi-case.webp';
 import socialShanFoodsThumb from '../assets/images/social-shan-foods-card.webp';
 import socialShanFoodsExpanded from '../assets/images/social-shan-foods-case.webp';
-import christmasSantaCard from '../assets/images/christmas-santa-card.png';\nimport christmasSantaExpanded from '../assets/images/christmas-santa-expanded.png';\nimport brandingKhaadiThumb from '../assets/images/branding-khaadi-card.webp';
+import brandingKhaadiThumb from '../assets/images/branding-khaadi-card.webp';
 import brandingKhaadiExpanded from '../assets/images/branding-khaadi-case.webp';
 import brandingShanFoodsThumb from '../assets/images/branding-shan-foods-card.webp';
 import brandingShanFoodsExpanded from '../assets/images/branding-shan-foods-case.webp';
