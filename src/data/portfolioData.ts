@@ -354,27 +354,6 @@ export const PROJECTS_DATA: Project[] = [
     outcome: "Delivered a flexible set of presentation-ready logo concepts suitable for university branding studies, athletics graphics, apparel, stickers, and promotional design."
   },
 
-  {
-    id: "christmas-santa-reindeer-illustration",
-    title: "Santa & Reindeer Holiday Illustration Collection",
-    category: "Vector Illustration",
-    filterTag: "Illustration",
-    shortDescription: "A festive collection of Santa and reindeer illustrations created for cheerful Christmas artwork, seasonal graphics, and holiday merchandise.",
-    thumbnailBg: "from-red-100 via-white to-green-100",
-    image: christmasSantaCard,
-    detailImage: christmasSantaExpanded,
-    detailAspect: '16/9',
-    gallery: [],
-    client: "Seasonal Illustration Concept Series",
-    year: "2026",
-    role: "Illustrator & Character Designer",
-    overview: "Created a playful Christmas illustration collection featuring Santa Claus, reindeer, gifts, ornaments, wreaths, stockings, Christmas trees, and other festive compositions in a consistent cheerful style.",
-    challenge: "Keeping many different characters and holiday compositions visually consistent while preserving clear silhouettes, expressive poses, clean outlines, and strong seasonal color contrast.",
-    approach: "Developed a cohesive illustration language across Santa and reindeer characters, combining bold outlines, simple color blocking, expressive poses, and carefully arranged festive elements for flexible seasonal use.",
-    toolsUsed: ["Adobe Illustrator", "Adobe Photoshop", "AI Tools"],
-    outcome: "Delivered a versatile set of festive character illustrations suitable for Christmas campaigns, greeting graphics, apparel, stickers, packaging, social media, and other seasonal applications."
-  },
-
   // ================= PHOTO EDITING (5 PROJECTS) =================
   {
     id: "editorial-portrait-retouch",
