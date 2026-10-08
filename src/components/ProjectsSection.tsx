@@ -75,7 +75,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                   key={project.id}
                   onClick={() => {
                     if (project.filterTag === 'Web Design' && project.liveUrl) {
-                      window.open(project.liveUrl, '_blank', 'noopener,noreferrer');
+                      window.open(project.liveUrl, '_blank');
                       return;
                     }
                     onSelectProject(project);
