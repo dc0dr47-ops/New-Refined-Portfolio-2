@@ -806,7 +806,7 @@ export const PROJECTS_DATA: Project[] = [
     filterTag: "Web Design",
     shortDescription: "Modern responsive e-commerce website for a cosmetics and beauty supplies business, focused on clear product presentation, easy browsing, and mobile-friendly shopping.",
     thumbnailBg: "from-pink-100 via-white to-rose-100",
-    image: "https://image.thum.io/get/width/1600/crop/900/noanimate/https://cosmetics-beauty-supplies.ai.studio/",
+    image: "https://wsrv.nl/?url=https%3A%2F%2Fimage.thum.io%2Fget%2Fwidth%2F1000%2Fcrop%2F750%2Fnoanimate%2Fhttps%3A%2F%2Fcosmetics-beauty-supplies.ai.studio%2F&output=webp&w=800&q=72",
       detailAspect: '16/9',
   liveUrl: "https://cosmetics-beauty-supplies.ai.studio/",
     gallery: [],
